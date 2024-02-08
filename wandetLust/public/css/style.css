@@ -1,0 +1,282 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container1 {
+  flex: 1;
+}
+.container {
+  margin: auto;
+}
+nav {
+  height: 5rem;
+  position: sticky;
+}
+.nav-link {
+  color: black !important;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+.logo img {
+  width: 70px;
+  height: 70px;
+  /* background-color: transparent; */
+  mix-blend-mode: multiply;
+}
+.navbar {
+  padding-top: 0px;
+}
+.container-fluid {
+  border-bottom: 2px solid black;
+  background-color: rgb(242, 240, 240) !important;
+}
+.icon {
+  font-size: 1.5rem;
+  margin: 8px;
+}
+.icon i {
+  padding: 5px;
+  color: rgb(144, 137, 137);
+}
+.icon i:hover {
+  color: black;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.copywrite {
+  margin-bottom: 8px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  border-radius: 0px;
+  background-color: rgb(242, 240, 240) !important;
+}
+footer {
+  width: 100%;
+  /* position: fixed; */
+  border-top: 2px solid black;
+  bottom: 0;
+}
+.card {
+  border: none;
+}
+.card img {
+  height: 250px;
+  border-radius: 2%;
+}
+.card-body {
+  margin: 5px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.card-text {
+  margin: 0;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+.like {
+  color: white;
+  background-color: black;
+}
+.addnew {
+  width: 50%;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+.anchor a:hover {
+  text-decoration: underline;
+}
+.navbar-nav a :hover {
+  text-decoration: underline;
+}
+.style {
+  display: flex;
+  justify-content: space-between;
+}
+.short {
+  display: none;
+}
+.alert {
+  height: 3.5rem !important;
+  text-align: center;
+}
+.row {
+  margin: auto;
+}
+a:hover {
+  text-decoration: none;
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+}
+.text-info {
+  display: none;
+}
+.filters::-webkit-scrollbar {
+  display: none;
+}
+.filter {
+  margin-right: 25px;
+  text-align: center;
+}
+.filter img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+i {
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.textToggle1 {
+  display: none;
+}
+.textToggle,
+.textToggle1 {
+  border: 1px solid black;
+  width: 15%;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.form-select {
+  margin-right: 10px;
+}
+@media (max-width: 431px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .main {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+  }
+  .main::-webkit-scrollbar {
+    display: none;
+  }
+  #textToggle1 {
+    display: none;
+  }
+  .filters {
+    margin-left: 1050px;
+    width: fit-content;
+  }
+  #textToggle {
+    width: 35vw;
+    margin: auto;
+    overflow-x: hidden;
+    display: block;
+  }
+  .alert {
+    width: 100vw;
+    margin: auto;
+  }
+  #login {
+    width: 80vw;
+    margin-left: 35px;
+  }
+  #login .form-control {
+    width: 70vw;
+    margin-left: -60px;
+  }
+  #login .form-label {
+    margin-left: -55px;
+  }
+  #login .btn {
+    margin-left: -55px;
+  }
+  .addnew {
+    width: 70vw;
+  }
+  .col-md-6 {
+    padding-left: 0px;
+    padding: 0px;
+  }
+  div.container.container1 {
+    width: 90vw;
+    padding: 0px;
+  }
+  #col-auto {
+    margin-left: 40px;
+  }
+  .card {
+    width: 70vw;
+    margin: auto;
+  }
+  .map {
+    width: 90vw;
+    margin: 0px;
+    margin: auto;
+  }
+  .comment {
+    width: 90vw !important;
+  }
+  .row div {
+    padding: 0px;
+  }
+  .row {
+    display: inline-block;
+  }
+  .row input,
+  #form-select {
+    width: 33vw;
+  }
+  #form-select {
+    margin: 0px;
+  }
+  .footer {
+    width: 100vw;
+  }
+}
+@media (max-width: 980px) {
+  .all {
+    display: none;
+  }
+  .short {
+    display: block;
+  }
+  .col-md-6 {
+    padding: 0px;
+  }
+  .selectopt {
+    width: 30vw;
+  }
+}
+@media (width: 280px) {
+  .filters {
+    margin-left: 1150px;
+  }
+  #textToggle {
+    width: 45vw;
+  }
+  .row input,
+  #form-select {
+    width: 70vw;
+  }
+  #login {
+    margin-left: 40px;
+  }
+}
