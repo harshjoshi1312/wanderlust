@@ -1,2 +1,3 @@
 # wanderlust
-This is wanderlust website
+This repo contains for mern stack air bnb type clone
+
